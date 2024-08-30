@@ -32,7 +32,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_text("Jᴏɪɴ ~ @Do_lafz1 💗")
+            await message.reply_text("Jᴏɪɴ ~ @fenixava")
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -86,7 +86,7 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         await message.reply_video(
-            video=f"https://telegra.ph/file/05b6887a67e805e1087c5.mp4",
+            video=f"https://telegra.ph/file/d295ef8734f53b17e94ce.mp4",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -103,7 +103,7 @@ async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_video(
-        video=f"https://telegra.ph/file/62bfd3c4ce30b771a2bd3.mp4",
+        video=f"https://telegra.ph/file/d295ef8734f53b17e94ce.mp4",
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
